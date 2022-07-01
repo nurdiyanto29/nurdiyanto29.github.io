@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-lg-7 d-flex flex-column justify-content-center pb-5 order-1 order-lg-1 text-center text-lg-start">
                     <div class="d-flex justify-content-lg-start justify-content-center">
-                        <h1>Hi, I'm nr&nbsp</h1>
+                        <h1 id="nama">Hi, I'm nr&nbsp</h1>
                         <div class="d-flex hover">
                             <h1>/</h1>
                             <h1>N</h1>
@@ -121,7 +121,7 @@
     <section id="aboutMe">
         <div class="container">
             <!-- About Me -->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" id="about">
                 <div class="col-8 text-center">
                     <div class="d-flex justify-content-center pb-3 about-me" data-aos="fade-up">
                         <h1>About&nbsp</h1>
@@ -146,6 +146,7 @@
                     </p>
                 </div>
             </div>
+
             <!-- My Profile -->
             <div class="row">
                 <div class="col-lg-7 order-1 order-lg-1 text-center text-lg-start">
@@ -477,6 +478,36 @@
                 </ul>
             </div>`
             );
+            $('#nama').html(` <h1>Halo, saya nr&nbsp</h1>`)
+            $('#about').html(
+                `  <div class="row justify-content-center">
+                <div class="col-8 text-center">
+                    <div class="d-flex justify-content-center pb-3 about-me" data-aos="fade-up">
+                        <h1>Tentang&nbsp</h1>
+                        <div class="d-flex hover">
+                            <h1>S</h1>
+                            <h1>a</h1>
+                            <h1>y</h1>
+                            <h1>a</h1>
+                        </div>
+                    </div>
+                    <p data-aos="zoom-in-left" data-aos-duration="700" data-aos-delay="500" data-aos-anchor="#aboutMe .about-me">Halo, Nama saya Nurdiyanto. Teman temanku biasa memanggilku nur
+                        <span>nur.</span> Tapi ada juga beberapa teman saya yang memanggil saya <span>"SI A"</span>, Saya Tidak tahu mengapa mereka memanggil saya seperti itu. Saya adalah seorang <span>Pengembang Web</span> yang masih dalam masa belajar dan terus belarar
+                        . Sekarang saya bekerja di CV NEOX Indonesia</a> sebagai <span>Fullstack website developer</span>.Sebelum bekerja di NEOX saya sering membuat website pribadi dan juga sering mengerjakan proyek web teman yang sedang mengerjakan skripsi
+                       dan saya mendapatkan upah dari itu. Hal ini sudah berjalan dari awal tahun 2021 sampai sekarang ketika saya sudah mulai bekerja
+                    </p>
+                    <br />
+                    <p data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="1000" data-aos-anchor="#aboutMe .about-me">
+                        Saya <span>sangat tertarik</span> di pengembangan web dan membuat website <span> terbaik.</span>Saya dapat membuat banyak situs web, , <span>pendekatan Kreatif</span> Memecahkan masalah , dan juga
+                        <span>orang yang dapat di andalkan</span> yang <span>hebat</span> dalam memanajemen waktu
+                    </p>
+
+                    <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1300" data-aos-anchor="#aboutMe .about-me">
+                        <q>Berjalan tak seperti rencana adalah jalan yang sudah biasa, jalan satu satunya jalani sebaik kau bisa</q>
+                    </p>
+                </div>
+            </div>`
+            )
         })
     </script>
 
