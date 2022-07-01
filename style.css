@@ -26,6 +26,13 @@ section {
     padding-top: 5rem;
 }
 
+td a {
+    background-color: transparent;
+    /* border: 0px; */
+    transition: 0.5s;
+    color: black;
+}
+
 h1,
 h2,
 h4 {
@@ -168,7 +175,7 @@ Projects
 }
 
 #projects a:hover {
-    box-shadow: 1px 1px 5px grey;
+    color: #185adb;
 }
 
 #projects .container {
