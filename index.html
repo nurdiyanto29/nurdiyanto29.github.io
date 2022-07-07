@@ -35,6 +35,99 @@
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+    <style>
+        .dropdown {
+            list-style: none;
+            padding-left: 0;
+            padding-top: 8px;
+            max-height: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 110%;
+            left: -3px;
+            -webkit-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+            width: 180px;
+            text-align: center;
+            padding-top: 0;
+            z-index: 200;
+        }
+        
+        .dropdown li {
+            background: #222;
+            padding: 5px;
+        }
+        
+        .dropdown li a {
+            display: block;
+            text-decoration: none;
+            color: blue;
+        }
+        
+        .dropdown li a:active {
+            color: blue;
+        }
+        
+        .dropdown li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        
+        .dropdown li:first-child {
+            padding-top: 10px;
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .dropdown li:last-child {
+            padding-bottom: 10px;
+            border-radius: 0 0 3px 3px;
+        }
+        
+        .dropdown li:hover {
+            background: #444;
+        }
+        
+        .dropdown:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 8px;
+            height: 0;
+            border: 0 solid transparent;
+            border-right-width: 8px;
+            border-left-width: 8px;
+            border-bottom: 8px solid #222;
+        }
+        
+        .change_language {
+            border-radius: 20px;
+            position: relative;
+            background: #0a1931;
+            color: #fff;
+            padding: 8px;
+            margin-bottom: 0px;
+        }
+        
+        .change_language:hover .dropdown {
+            max-height: 440px;
+            padding-top: 8px;
+        }
+        
+        .g_translate_container {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .goog-te-banner {
+            margin: 0;
+            background-color: #e4effb;
+            overflow: hidden;
+            display: none;
+        }
+    </style>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -65,7 +158,27 @@
                         <a class="nav-link active" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" id="idn" href="#">ID <img src="images/indonesia.png" style="height: 22px;" alt=""></a>
+                        <!-- <a class="nav-link active" id="idn" href="#">ID <img src="images/indonesia.png" style="height: 22px;" alt=""></a> -->
+                        <ul class="g_translate_container">
+                            <li class="change_language">Select a language :
+                                <ul class="dropdown">
+                                    <li><a href="#googtrans(en|id)" class="lang-select" data-lang="id">Indonesia</a></li>
+                                    <li><a href="#googtrans(en|en)" class="lang-select" data-lang="en">English</a></li>
+                                    <li><a href="#googtrans(en|es)" class="lang-select" data-lang="es">Spain</a></li>
+                                    <li><a href="#googtrans(en|fr)" class="lang-select" data-lang="fr">France</a></li>
+                                    <li><a href="#googtrans(en|zh-CN)" class="lang-select" data-lang="zh-CN">China</a></li>
+                                    <li><a href="#googtrans(en|ja)" class="lang-select" data-lang="ja">Japan</a></li>
+
+                                    <li><a href="#googtrans(en|af)" class="lang-select" data-lang="af">Afrikaans</a></li>
+
+                                    <li><a href="#googtrans(en|hy)" class="lang-select" data-lang="hy">Armenian</a></li>
+
+                                    <li><a href="#googtrans(en|be)" class="lang-select" data-lang="be">Belarusian</a></li>
+
+                                    <li><a href="#googtrans(en|el)" class="lang-select" data-lang="el">Greek</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -451,65 +564,47 @@
             opacity: 0.5,
             ease: 'bounce'
         });
-        $(document).on('click', '#idn', function() {
-            $('#nav').html(
-                ` <a class="navbar-brand" href="#">
-                <img src="images/12.png" alt="nr" width="30" height="30" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#aboutMe">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Projects</a>
-                    <li class="nav-item">
-                        <a class="nav-link active" id="idn" href="index.html">ENG <img src="images/united-kingdom.png" style="height: 22px;" alt=""></a>
-                    </li>
-                </ul>
-            </div>`
-            );
-            $('#nama').html(` <h1>Halo, saya nr&nbsp</h1>`)
-            $('#about').html(
-                `  <div class="row justify-content-center">
-                <div class="col-8 text-center">
-                    <div class="d-flex justify-content-center pb-3 about-me" data-aos="fade-up">
-                        <h1>Tentang&nbsp</h1>
-                        <div class="d-flex hover">
-                            <h1>S</h1>
-                            <h1>a</h1>
-                            <h1>y</h1>
-                            <h1>a</h1>
-                        </div>
-                    </div>
-                    <p data-aos="zoom-in-left" data-aos-duration="700" data-aos-delay="500" data-aos-anchor="#aboutMe .about-me">Halo, Nama saya Nurdiyanto. Teman temanku biasa memanggilku nur
-                        <span>nur.</span> Tapi ada juga beberapa teman saya yang memanggil saya <span>"SI A"</span>, Saya Tidak tahu mengapa mereka memanggil saya seperti itu. Saya adalah seorang <span>Pengembang Web</span> yang masih dalam masa belajar dan terus belarar
-                        . Sekarang saya bekerja di CV NEOX Indonesia</a> sebagai <span>Fullstack website developer</span>.Sebelum bekerja di NEOX saya sering membuat website pribadi dan juga sering mengerjakan proyek web teman yang sedang mengerjakan skripsi
-                       dan saya mendapatkan upah dari itu. Hal ini sudah berjalan dari awal tahun 2021 sampai sekarang ketika saya sudah mulai bekerja
-                    </p>
-                    <br />
-                    <p data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="1000" data-aos-anchor="#aboutMe .about-me">
-                        Saya <span>sangat tertarik</span> di pengembangan web dan membuat website <span> terbaik.</span>Saya dapat membuat banyak situs web, , <span>pendekatan Kreatif</span> Memecahkan masalah , dan juga
-                        <span>orang yang dapat di andalkan</span> yang <span>hebat</span> dalam memanajemen waktu
-                    </p>
-
-                    <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1300" data-aos-anchor="#aboutMe .about-me">
-                        <q>Berjalan tak seperti rencana adalah jalan yang sudah biasa, jalan satu satunya jalani sebaik kau bisa</q>
-                    </p>
-                </div>
-            </div>`
-            )
-        })
     </script>
+    <!-- translate.js -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+
+        }
+
+        function triggerHtmlEvent(element, eventName) {
+
+            var event;
+
+            if (document.createEvent) {
+                event = document.createEvent('HTMLEvents');
+                event.initEvent(eventName, true, true);
+                element.dispatchEvent(event);
+
+            } else {
+                event = document.createEventObject();
+                event.eventType = eventName;
+                element.fireEvent('on' + event.eventType, event);
+
+            }
+
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".lang-select").click(function() {
+
+                var theLang = $(this).attr('data-lang');
+                $(".goog-te-combo").val(theLang);
+                window.location = $(this).attr('href');
+                window.location.reload();
+            });
+        });
+    </script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
