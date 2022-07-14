@@ -157,29 +157,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link active" id="idn" href="#">ID <img src="images/indonesia.png" style="height: 22px;" alt=""></a> -->
-                        <ul class="g_translate_container">
-                            <li class="change_language">Select a language :
-                                <ul class="dropdown">
-                                    <li><a href="#googtrans(en|id)" class="lang-select" data-lang="id">Indonesia</a></li>
-                                    <li><a href="#googtrans(en|en)" class="lang-select" data-lang="en">English</a></li>
-                                    <li><a href="#googtrans(en|es)" class="lang-select" data-lang="es">Spain</a></li>
-                                    <li><a href="#googtrans(en|fr)" class="lang-select" data-lang="fr">France</a></li>
-                                    <li><a href="#googtrans(en|zh-CN)" class="lang-select" data-lang="zh-CN">China</a></li>
-                                    <li><a href="#googtrans(en|ja)" class="lang-select" data-lang="ja">Japan</a></li>
-
-                                    <li><a href="#googtrans(en|af)" class="lang-select" data-lang="af">Afrikaans</a></li>
-
-                                    <li><a href="#googtrans(en|hy)" class="lang-select" data-lang="hy">Armenian</a></li>
-
-                                    <li><a href="#googtrans(en|be)" class="lang-select" data-lang="be">Belarusian</a></li>
-
-                                    <li><a href="#googtrans(en|el)" class="lang-select" data-lang="el">Greek</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -566,45 +543,6 @@
         });
     </script>
     <!-- translate.js -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en'
-            }, 'google_translate_element');
-
-        }
-
-        function triggerHtmlEvent(element, eventName) {
-
-            var event;
-
-            if (document.createEvent) {
-                event = document.createEvent('HTMLEvents');
-                event.initEvent(eventName, true, true);
-                element.dispatchEvent(event);
-
-            } else {
-                event = document.createEventObject();
-                event.eventType = eventName;
-                element.fireEvent('on' + event.eventType, event);
-
-            }
-
-        }
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $(".lang-select").click(function() {
-
-                var theLang = $(this).attr('data-lang');
-                $(".goog-te-combo").val(theLang);
-                window.location = $(this).attr('href');
-                window.location.reload();
-            });
-        });
-    </script>
-    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
