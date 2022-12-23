@@ -135,6 +135,11 @@
             border-radius: 50%;
             margin: 60px;
         }
+        
+        .skil-img {
+            max-width: 300px;
+        }
+        /* tambahan */
     </style>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -189,7 +194,6 @@
                             <h1>n</h1>
                             <h1>t</h1>
                             <h1>o</h1>
-
                         </div>
                     </div>
                     <p>23 | Web Developer | Freelancer | Gamer</p>
@@ -304,6 +308,7 @@
     <!-- Akhir About Me -->
 
     <!-- Skills -->
+    {#
     <section id="skills">
         <div class="container">
             <div class="row justify-content-center">
@@ -317,32 +322,75 @@
                         <h1>s</h1>
                     </div>
                 </div>
-                <!-- Laravel -->
-                <div class="row">
-                    <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                        <h2>Laravel</h2>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">77%</div>
+
+                <div class="lightbox" style="text-align: center;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="skil-img" src="images/laravel.svg" alt="Table Full of Spices" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                        </div>
+
+                        <div class="col-lg-4">
+                            <img class="skil-img" src="images/exp_css.svg" alt="Table Full of Spices" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="skil-img" src="images/node.svg" alt="Dark Roast Iced Coffee" class="w-100 shadow-1-strong rounded" />
                         </div>
                     </div>
-                    <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
-                        <img src="images/laravel.svg" style="width: 220px;" alt="skill-html" class="img-fluid" />
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img class="skil-img" src="images/api.png" alt="Table Full of Spices" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                            <img class="skil-img" src="images/exp_bootstrap.png" alt="Coconut with Strawberries" class="w-100 shadow-1-strong rounded" />
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="skil-img" src="images/exp_js.svg" alt="Table Full of Spices" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img class="skil-img" src="images/php.svg" alt="Coconut with Strawberries" class="w-100 shadow-1-strong rounded" />
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="skil-img" src="images/exp_js.svg" alt="Table Full of Spices" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                        </div>
                     </div>
                 </div>
-                <!-- PHP -->
-                <div class="row">
-                    <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                        <h2>PHP</h2>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
+
+
+                <!-- <div class="row">
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/laravel.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
                     </div>
-                    <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/php.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
                     </div>
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/node.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
                 </div>
-                <!-- NODE js -->
                 <div class="row">
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/node.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/exp_html.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/exp_css.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/node.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/exp_html.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-4 sm-12 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
+                        <img src="images/exp_css.svg" style="height: 220px;" alt="skill-html" class="img-fluid" />
+                    </div>
+                </div> -->
+                <!-- NODE js -->
+                <!-- <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <h2>Node JS</h2>
                         <div class="progress">
@@ -352,8 +400,8 @@
                     <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/node.svg" style="width: 220px;" alt="skill-html" class="img-fluid" />
                     </div>
-                </div>
-                <!-- HTML -->
+                </div> -->
+                <!-- HTML
                 <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <h2>HTML</h2>
@@ -364,10 +412,10 @@
                     <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/exp_html.svg" alt="skill-html" class="img-fluid" />
                     </div>
-                </div>
+                </div> -->
 
                 <!-- CSS -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <h2>CSS</h2>
                         <div class="progress">
@@ -377,9 +425,9 @@
                     <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/exp_css.svg" alt="skill-css" class="img-fluid" />
                     </div>
-                </div>
+                </div> -->
                 <!-- Javascript -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <h2>Javascript</h2>
                         <div class="progress">
@@ -389,9 +437,9 @@
                     <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/exp_js.svg" alt="skill-javascript" class="img-fluid" />
                     </div>
-                </div>
+                </div> -->
                 <!-- Bootstrap -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <h2>Bootstrap</h2>
                         <div class="progress">
@@ -401,8 +449,8 @@
                     <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/exp_bootstrap.png" alt="skill-bootstrap" class="img-fluid" />
                     </div>
-                </div>
-                <div class="row">
+                </div> -->
+                <!-- <div class="row">
                     <div class="col-lg-8 d-flex flex-column justify-content-center order-1 order-lg-1 text-center text-lg-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                         <h2>API</h2>
                         <div class="progress">
@@ -412,13 +460,13 @@
                     <div class="col-lg-4 order-0 order-lg-2 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <img src="images/api.png" alt="skill-bootstrap" class="img-fluid" />
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1"></path>
         </svg>
-    </section>
+    </section> #}
     <!-- Akhir Skills -->
 
     <!-- Projects -->
