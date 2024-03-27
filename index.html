@@ -23,12 +23,21 @@
         font-size: 24px;
         font-weight: bold;
     }
+        .blinking-text {
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
 </style>
 </head>
 <body>
 
 <div id="calculator">
-    <h1 style="font-size: 28px;">Info reRegan Buu..</h2>
+    <h1 class="blinking-text" style="font-size: 28px;">Info reRegan Buu..</h2>
     <label for="hargaPerKilo">Harga per kilo (Rp):</label><br>
     <input type="number" id="hargaPerKilo" min="0"><br><br>
     <label for="jumlahKilo">Jumlah kilo:</label><br>
