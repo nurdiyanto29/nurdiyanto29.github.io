@@ -23,15 +23,24 @@
         font-size: 24px;
         font-weight: bold;
     }
-        .blinking-text {
-        animation: blink 1s infinite;
+      <style>
+    .blinking-text {
+        animation: blink 0.5s infinite;
     }
 
     @keyframes blink {
-        50% {
-            opacity: 0;
+        0% {
+            color: red;
+        }
+        33% {
+            color: yellow;
+        }
+        66% {
+            color: green;
         }
     }
+</style>
+
 </style>
 </head>
 <body>
