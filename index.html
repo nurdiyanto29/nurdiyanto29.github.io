@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Harga</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #calculator {
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        width: 300px;
+        text-align: center;
+    }
+    label, input, button {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #hasil {
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div id="calculator">
+    <h1 style="font-size: 28px;">Kalkulator Harga</h2>
+    <label for="hargaPerKilo">Harga per kilo (Rp):</label><br>
+    <input type="number" id="hargaPerKilo" min="0"><br><br>
+    <label for="jumlahKilo">Jumlah kilo:</label><br>
+    <input type="number" id="jumlahKilo" min="0"><br><br>
+    <label for="totalHarga">Total harga (Rp):</label><br>
+    <input type="number" id="totalHarga" min="0"><br><br>
+    <button onclick="hitung()">Hitung</button><br><br>
+    <div id="hasil"></div>
+</div>
+<script>
+    function hitung() {
+        var hargaPerKilo = parseFloat(document.getElementById("hargaPerKilo").value);
+        var jumlahKilo = parseFloat(document.getElementById("jumlahKilo").value);
+        var totalHarga = parseFloat(document.getElementById("totalHarga").value);
+        var hasil = document.getElementById("hasil");
+
+        // Cek apakah hargaPerKilo terisi
+        if (isNaN(hargaPerKilo) || hargaPerKilo <= 0) {
+            alert("Harap isi harga per kilo dengan benar.");
+            return;
+        }
+
+        // Cek apakah jumlahKilo dan totalHarga kosong
+        if (isNaN(jumlahKilo) && isNaN(totalHarga)) {
+            alert("Harap isi jumlah kilo atau total harga.");
+            return;
+        }
+
+        // Cek apakah jumlahKilo dan totalHarga tidak semuanya terisi
+        if ((!isNaN(jumlahKilo) && !isNaN(totalHarga)) || (isNaN(jumlahKilo) && isNaN(totalHarga))) {
+            alert("Harap isi salah satu dari jumlah kilo atau total harga.");
+            return;
+        }
+
+        // Hitung total harga jika jumlah kilo terisi
+        if (!isNaN(jumlahKilo)) {
+            totalHarga = hargaPerKilo * jumlahKilo;
+            document.getElementById("totalHarga").value = totalHarga.toLocaleString(); // Menampilkan titik sebagai pemisah ribuan
+        }
+
+        // Hitung jumlah kilo jika total harga terisi
+        if (!isNaN(totalHarga)) {
+            jumlahKilo = totalHarga / hargaPerKilo;
+            document.getElementById("jumlahKilo").value = jumlahKilo.toFixed(2); // Biarkan 2 digit di belakang koma
+        }
+
+        // Tampilkan hasil
+        hasil.innerHTML = "Total Harga: Rp " + totalHarga.toLocaleString() + "<br>Jumlah Kilo: " + jumlahKilo.toFixed(2) + " kg";
+
+        // Bersihkan nilai input jumlah kilo dan total harga
+        document.getElementById("jumlahKilo").value = "";
+        document.getElementById("totalHarga").value = "";
+    }
+</script>
+
+
+</body>
 </html>
