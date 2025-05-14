@@ -1,695 +1,1449 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en" data-bs-theme="dark"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>nr - Web developer</title>
+    <script src="js/color-modes.js"></script>
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_1.svg">
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/carouselTicker.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/remixicon_1.css">
+    <link rel="stylesheet" href="css/satoshi.css">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- CSS -->
+    <link href="css/minimal.css" rel="stylesheet">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <!-- <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li> -->
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <!-- <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li> -->
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/bg-head.png" alt="">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Nurdiyanto</h2>
-            <p>I'm <span class="typed" data-typed-items="Gamer,Web Developer">Web Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+  <body class="home-page-2">
+    <!-- prettier-ignore -->
+    <!--Preloader-->
+    <div id="preloader">
+      <div class="loader-cover">
+        <div class="loader-container">
+          <div class="loader-icon-2"></div>
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Kami memiliki berbagai keahlian di bidang teknologi dan pengembangan perangkat lunak, 
-          mulai dari desain UI/UX, pengembangan web, hingga keamanan sistem. 
-          Dengan pengalaman bertahun-tahun, kami siap menghadirkan solusi terbaik untuk Anda.</p>
-       
-      </div><!-- End Section Title -->
-
-      <!-- Tambahkan CDN Devicon di head -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-  <div class="skills-scroll-wrapper">
-      <div class="skills-scroll-container">
-          <!-- Item Skill -->
-          <div class="skill-card">
-              <i class="devicon-html5-plain colored"></i>
-              <h4>HTML5</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-css3-plain colored"></i>
-              <h4>CSS3</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-javascript-plain colored"></i>
-              <h4>JavaScript</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-php-plain colored"></i>
-              <h4>PHP</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-laravel-plain colored"></i>
-              <h4>Laravel</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-codeigniter-plain colored"></i>
-              <h4>CodeIgniter</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-mysql-plain colored"></i>
-              <h4>MySQL</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-postgresql-plain colored"></i>
-              <h4>PostgreSQL</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-wordpress-plain colored"></i>
-              <h4>WordPress</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-photoshop-plain colored"></i>
-              <h4>Photoshop</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-amazonwebservices-plain colored"></i>
-              <h4>AWS S3</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-docker-plain colored"></i>
-              <h4>Docker</h4>
-          </div>
-
-          <div class="skill-card">
-              <i class="devicon-git-plain colored"></i>
-              <h4>Git</h4>
-          </div>
-      </div>
-  </div>
-</div>
-
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-   <section id="resume" class="resume section">
-
-      <!-- Section Title --> 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portofolio</h2>
-        <p>
-          Keahlian dan dedikasi kami tercermin dalam setiap proyek yang kami kerjakan. 
-          Kami berkomitmen untuk memberikan solusi terbaik yang inovatif dan berkualitas tinggi. 
-          Dengan pengalaman yang luas, kami siap membantu Anda mencapai tujuan dengan hasil yang maksimal.
-        </p>
-      </div><!-- End Section Title -->
-      
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Service</h2>
-        <p>Saya menyediakan solusi digital lengkap untuk kebutuhan bisnis Anda. Dari pembuatan website profesional hingga optimasi performa, semua dikerjakan dengan teknologi terkini dan standar kualitas tinggi.</p>
     </div>
-      <div class="container">
+    <!--Preloader-end -->
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-easel"></i>
-              </div>
-              
-              <a href="#" class="stretched-link">
-                <h3>Pembuatan Website Profesional</h3>
+    <!-- Navbar -->
+    <header>
+      <div class="container position-relative">
+        <div class="position-relative">
+          <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+            <a aria-controls="offCanvas__info" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" href="/">
+              <i class="ri-menu-2-line"></i>
             </a>
-            <p>Web perusahaan, portfolio, atau landing page responsif dengan desain modern dan fitur lengkap</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Toko Online (E-Commerce)</h3>
-            </a>
-            <p>Platform belanja online dengan sistem manajemen produk, pembayaran digital, dan dashboard admin</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Optimasi SEO</h3>
-            </a>
-            <p>Optimasi website untuk mesin pencari agar muncul di halaman pertama Google</p>
-        </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+            <div class="container py-3 px-4">
+              <a class="navbar-brand d-flex main-logo align-items-center" href="/">
+                <img src="images/favicon.svg" alt="nr">
+                <span class="fs-4 ms-2">nr.dev</span>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
+              <div class="d-none d-lg-flex">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#services">Expertise</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#project">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                <div class="d-md-flex d-none gap-2">
+                  <!-- <a href="https://www.tiktok.com/@thisishaykal" target="_blank">
+                    <i class="ri-tiktok-fill fs-18"></i>
+                  </a> -->
+                  <a href="" target="_blank">
+                    <i class="ri-linkedin-fill fs-18"></i>
+                  </a>
+                  <a href="" target="_blank">
+                    <i class="ri-github-fill fs-18"></i>
+                  </a>
+                  <a href="" target="_blank">
+                    <i class="ri-instagram-fill fs-18"></i>
+                  </a>
+                  <a href="" target="_blank">
+                    <i class="ri-facebook-circle-fill fs-18"></i>
+                  </a>
+                  <a href="mailto:nurdi014@gmail.com" target="_blank">
+                    <i class="ri-mail-fill fs-18"></i>
+                  </a>
+                </div>
+                <div class="burger-icon burger-icon-white border rounded-3">
+                  <span class="burger-icon-top"></span>
+                  <span class="burger-icon-mid"></span>
+                  <span class="burger-icon-bottom"></span>
+                </div>
+              </div>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-calendar4-week icon"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Maintenance Website</h3>
-            </a>
-            <p>Perawatan berkala, update konten, backup data, dan perbaikan bug</p>
-        
-              <a href="#" class="stretched-link"></a>
+            <div class="dark-light-switcher pe-10 pe-lg-0 pe-0 ps-md-5 ps-0 ps-lg-4 pe-lg-4 d-flex justify-content-center align-items-center icon_80 @@classList">
+              <i class="ri-sun-fill text-warning"></i>
+              <i class="ri-contrast-2-line text-white"></i>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Web Mobile-Friendly</h3>
-            </a>
-            <p>Desain website yang responsif dan optimal untuk semua ukuran layar</p>
+          </nav>
         </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- Judul Section -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimoni</h2>
-        <p>Pengalaman pelanggan kami yang telah merasakan manfaat dari layanan kami.</p>
-      </div><!-- Akhir Judul Section -->
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-    
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Pemakaian layanan ini benar-benar membantu bisnis kami berkembang. Sistemnya mudah digunakan dan sangat efisien!</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Budi Santoso</h3>
-                      <h4>CEO Tokopedia</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- Akhir testimoni -->
-    
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Sangat puas dengan layanan ini! Prosesnya cepat dan respons dari tim support luar biasa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Siti Aisyah</h3>
-                      <h4>COO Bukalapak</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- Akhir testimoni -->
-    
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Kecepatan dan kemudahan layanan ini sangat membantu kami dalam operasional harian.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Andi Wijaya</h3>
-                      <h4>Direktur Gojek</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- Akhir testimoni -->
-    
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Dengan layanan ini, bisnis kami semakin berkembang pesat. Kami sangat merekomendasikannya!</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Rina Kusuma</h3>
-                      <h4>CMO Shopee Indonesia</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div><!-- Akhir testimoni -->
-    
+        <!-- offCanvas-menu -->
+        <div class="offCanvas__info style-2">
+          <div class="offCanvas__close-icon menu-close">
+            <button><i class="ri-close-line"></i></button>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-    
-      </div>
-    
-    </section><!-- /Section Testimoni -->
-  </main>
+          <div class="offCanvas__logo mb-5">
+            <h3 class="mb-0">Get in touch</h3>
+          </div>
+          <div class="offCanvas__side-info mb-30">
+            <div class="contact-list mb-30">
+              <p class="fs-6 fw-medium text-200 mb-5" style="text-align: justify; hyphens: auto; word-spacing: -0.4rem">
+                <!-- Hello, I'm Nurdiyanto, an Informatics Engineering student at STMIK IKMI CIREBON. I've participated in various bootcamps and obtained international certificates to support my career as a Web Developer. My experience
+                includes developing landing pages, e-commerce sites, portfolios, and to-do list applications. I'm always excited to take on new projects and collaborate with innovative minds. -->
+              </p>
+              <div class="mb-3">
+                <span class="text-400 fs-5">Phone Number</span>
+                <p class="mb-0"><a href="https://wa.me/6289509769069" target="_blank">+62 878-1545-4498</a></p>
+              </div>
+              <div class="mb-3">
+                <span class="text-400 fs-5">Email</span>
+                <p class="mb-0"><a href="mailto:nurdi014@gmail.com">nurdi014@gmail.com</a></p>
+              </div>
+            </div>
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">nrx</h3>
-      <p>Suatu hari nanti jika Tuhan sudah izinkan kamu mencapai mimpi itu, berjanjilah untuk tetap rendah hati ;)</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="credits">
-          Dibuat dengan penuh <span style="color: red;">Cinta ❤️</span> 
+            <div class="contact-list">
+              <p class="text-400 fs-5 mb-2">Social</p>
+              <div class="d-md-flex d-none gap-3">
+                <a href="https://www.facebook.com/muhammad.nr.afandi77" target="_blank">
+                  <i class="ri-facebook-circle-fill fs-18"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-nr24" target="_blank">
+                  <i class="ri-linkedin-fill fs-18"></i>
+                </a>
+                <a href="https://github.com/haykal24" target="_blank">
+                  <i class="ri-github-fill fs-18"></i>
+                </a>
+                <a href="https://www.instagram.com/nrdynt29" target="_blank">
+                  <i class="ri-instagram-fill fs-18"></i>
+                </a>
+                <a href="mailto:nurdi014@gmail.com" target="_blank">
+                  <i class="ri-mail-fill fs-18"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offCanvas__overly"></div>
+        <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+          <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-logo">
+              <a class="d-flex main-logo align-items-center d-inline-flex" href="/">
+                <img src="images/logo.svg" alt="zelio">
+                <span class="fs-4 ms-2 text-dark">.design</span>
+              </a>
+              <div class="burger-icon burger-icon-white border rounded-3">
+                <span class="burger-icon-top"></span>
+                <span class="burger-icon-mid"></span>
+                <span class="burger-icon-bottom"></span>
+              </div>
+            </div>
+            <div class="mobile-header-content-area">
+              <div class="perfect-scroll">
+                <div class="mobile-menu-wrap mobile-header-border">
+                  <nav>
+                    <ul class="mobile-menu font-heading ps-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#project">Portfolio</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </header>
+
+    <main>
+      <!-- prettier-ignore -->
+      <!--Home 2 Section 1-->
+      <section id="about" class="section-hero-2 position-relative pt-130 pb-3" data-aos="fade-up">
+        <div class="container hero-2">
+          <div class="rounded-3 border border-1 position-relative overflow-hidden">
+            <div class="box-linear-animation position-relative z-1 p-lg-5 p-3 p-md-4">
+              <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                  <div class="position-relative profile-image-container">
+                    <img src="images/bg-head.png" alt="haykal" class="img-fluid profile-image">
+                    <div class="position-absolute end-0 bottom-0 icon-container">
+                      <img src="images/icon.svg" alt="" class="img-fluid icon-image" style="width: 50px">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="mb-4">
+                    <div class="text-secondary-2 d-flex align-items-center">
+                      <span>
+                      <div class="text-dark">
+                        <div class="typewriter">
+                          <h1 class="fs-6 fw-medium">Hey, I'm nur</h1>
+                        </div>
+                      </div>
+                      </span>
+                    </div>
+                    <h3 class="my-3 judul-depan"><span class="text-linear-new"> {Full Stack} </span> Web developer<span class="flicker">_</span></h3>
+                  </div>
+                  <p class="mb-4 text-secondary-2" style="text-align: justify; hyphens: auto">
+                    </p><p><span class="text-dark">With expertise in various web development technologies, I deliver innovative and robust web solutions. My experience covers front-end, back-end, server management, UI/UX design, and database management.</span></p>
+                  <p></p>
+                  <!-- <div class="skills-section mb-4">
+                    <h4 class="mb-3 text-dark">Skills Bar</h4>
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-info d-flex justify-content-between mb-2">
+                            <span class="skill-name text-dark">HTML</span>
+                            <span class="skill-percentage" data-value="95">0%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="skill-progress bg-html" data-value="95"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-info d-flex justify-content-between mb-2">
+                            <span class="skill-name text-dark">CSS</span>
+                            <span class="skill-percentage" data-value="85">0%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="skill-progress bg-css" data-value="85"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-info d-flex justify-content-between mb-2">
+                            <span class="skill-name text-dark">JavaScript</span>
+                            <span class="skill-percentage" data-value="85">0%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="skill-progress bg-javascript" data-value="85"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="skill-item">
+                          <div class="skill-info d-flex justify-content-between mb-2">
+                            <span class="skill-name text-dark">PHP</span>
+                            <span class="skill-percentage" data-value="75">0%</span>
+                          </div>
+                          <div class="skill-bar">
+                            <div class="skill-progress bg-php" data-value="75"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <div class="d-flex justify-content-start flex-nowrap gap-3 mb-2 mt-2">
+                    <a href="#project" class="btn btn-custom">
+                      <span class="btn-icon"><i class="ri-eye-line"></i></span>
+                      <span class="btn-text">Projects</span>
+                    </a>
+                    <a href="assets/imgs/resume/Cv nr.pdf" class="btn btn-custom" target="_blank">
+                      <span class="btn-icon"><i class="ri-download-line"></i></span>
+                      <span class="btn-text">Resume</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Static 2-->
+      <div class="section-static-1 z-0 pt-5 pb-3" data-aos="fade-up">
+        <div class="container position-relative z-1">
+          <div class="rounded-3 border border-1 position-relative overflow-hidden">
+            <div class="box-linear-animation position-relative z-1 p-lg-5 p-3 p-md-4">
+              <div class="inner">
+                <div class="row justify-content-center">
+                  <div class="col-lg-3 col-md-6 text-center mb-4 mb-lg-0">
+                    <div class="counter-item-cover counter-item">
+                      <div class="content mx-auto">
+                        <h2 class="text-300 my-0 fs-50">
+                          <span class="odometer text-dark fw-medium" data-count="3"></span>
+                          <span class="fs-50 text-300 mb-0 text-linear-new">+</span>
+                        </h2>
+                        <p class="fs-6 mb-0 text-dark">Year Experience</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center mb-4 mb-lg-0">
+                    <div class="counter-item-cover counter-item">
+                      <div class="content mx-auto">
+                        <h2 class="text-300 my-0 fs-50">
+                          <span class="odometer text-dark fw-medium" data-count="20"></span>
+                          <span class="fs-50 text-300 mb-0 text-linear-new">+</span>
+                        </h2>
+                        <p class="fs-6 mb-0 text-dark">Projects Completed</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center mb-4 mb-lg-0">
+                    <div class="counter-item-cover counter-item">
+                      <div class="content mx-auto">
+                        <h2 class="text-300 my-0 fs-50">
+                          <span class="odometer text-dark fw-medium" data-count="20"></span>
+                          <span class="fs-50 text-300 mb-0 text-linear-new">+</span>
+                        </h2>
+                        <p class="fs-6 mb-0 text-dark">Satisfied Clients</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="counter-item-cover counter-item">
+                      <div class="content mx-auto">
+                        <h2 class="text-300 my-0 fs-50">
+                          <span class="odometer text-dark fw-medium" data-count="30"></span>
+                          <span class="fs-50 text-300 mb-0 text-linear-new">+</span>
+                        </h2>
+                        <p class="fs-6 mb-0 text-dark">Certifications</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="background position-absolute top-0 start-0 w-100 h-100 filter-invert" data-background="assets/imgs/home-page-2/static/bg.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- service 2 page 2-->
+      <section id="services" class="section-service-2 pt-5 pb-3" data-aos="fade-up">
+        <div class="container">
+          <div class="rounded-3 border border-1 position-relative overflow-hidden">
+            <div class="box-linear-animation position-relative z-1 p-lg-5 p-3 p-md-4">
+              <div class="position-relative z-1">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                      <circle cx="2.5" cy="3" r="2.5" fill="currentColor"></circle>
+                    </svg>
+                    <span class="text-linear-4 d-flex align-items-center"> Services </span>
+                  </div>
+                  <h5>
+                    <span>
+                      Designing solutions
+                      <span class="text-300"> customized to meet your requirements </span>
+                    </span>
+                  </h5>
+                </div>
+
+                <div class="container mt-5" style="text-align: justify; hyphens: auto">
+                  <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="service-card">
+                        <i class="ri-code-line service-icon"></i>
+                        <h5 class="service-title text-linear-new">Web Development</h5>
+                        <p class="service-description text-dark">Crafting visually appealing and user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks like React and Angular.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="service-card">
+                        <i class="ri-database-2-line service-icon"></i>
+                        <h5 class="service-title text-linear-new">Database Management</h5>
+                        <p class="service-description text-dark">Designing and managing databases with SQL and NoSQL technologies such as MySQL and MongoDB.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="service-card">
+                        <i class="ri-cloud-line service-icon"></i>
+                        <h5 class="service-title text-linear-new">API Development</h5>
+                        <p class="service-description text-dark">Creating and integrating RESTful APIs to enable smooth communication between front-end and back-end systems.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="service-card">
+                        <i class="ri-speed-line service-icon"></i>
+                        <h5 class="service-title text-linear-new">Performance Optimization</h5>
+                        <p class="service-description text-dark">Improving the speed and performance of web applications to provide a better user experience. Work with Node.js, Express.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="service-card">
+                        <i class="ri-shopping-cart-2-line service-icon"></i>
+                        <h5 class="service-title text-linear-new">E-commerce Solutions</h5>
+                        <p class="service-description text-dark">Developing scalable and secure payment solutions for e-commerce platforms tailored to your business needs.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div class="service-card">
+                        <i class="ri-layout-4-line service-icon"></i>
+                        <h5 class="service-title text-linear-new">UI/UX Design</h5>
+                        <p class="service-description text-dark">Creating intuitive and visually appealing user interfaces and experiences that enhance user engagement and satisfaction.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center pt-60">
+                    <p class="text-neutral-300">
+                      Excited to take on <span class="text-neutral-100">new projects</span> and collaborate. <br>
+                      Let's chat about your ideas. <a href="#" class="text-primary-2">Reach out!</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img class="position-absolute top-0 start-0 z-0" src="images/bg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="resume" class="section-experience pt-5 pb-3" data-aos="fade-up">
+        <div class="container" style="text-align: justify; hyphens: auto; word-spacing: -0.3rem">
+          <div class="rounded-3 border border-1 position-relative overflow-hidden">
+            <div class="box-linear-animation position-relative z-1 p-lg-5 p-3 p-md-4">
+              <div class="position-relative z-1">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                      <circle cx="2.5" cy="3" r="2.5" fill="#A8FF53"></circle>
+                    </svg>
+                    <span class="text-linear-4 d-flex align-items-center"> Experience </span>
+                  </div>
+                  <h5>
+                    <span>
+                      +3 year of passion
+                      <span class="text-300"> for meeting your requirements </span>
+                    </span>
+                  </h5>
+                </div>
+                <div class="row mt-5 justify-content-center experience-section">
+                  <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="experience-card">
+                        <div class="d-flex align-items-center gap-3">
+                          <img src="images/freelancer.svg" alt="" class="experience-icon">
+                          <div>
+                            <h5 class="mb-1 text-dark">Freelancer</h5>
+                            <span class="text-neutral-300 experience-date">January 2021 - Present</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="experience-card">
+                        <div class="d-flex align-items-center gap-3">
+                          <img src="images/office_building.svg" alt="" class="experience-icon">
+                          <div>
+                            <h5 class="mb-1 text-dark">PT Neox Terang Digital</h5>
+                            <span class="text-neutral-300 experience-date">December 2021 - Present</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                    <ul class="experience-list">
+                      <li class="experience-item text-dark">Leading company website development in the building manufacturing sector, creating product pages and company profile.</li>
+                      <li class="experience-item text-dark">Designing product-focused web pages to boost marketing and sales, prioritizing UX and responsiveness.</li>
+                      <li class="experience-item text-dark">Developing the company's e-commerce platform to facilitate online sales and product management.</li>
+                      <li class="experience-item text-dark">Collaborating with cross-functional teams for feature integration, website performance, and business alignment.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="position-absolute top-0 start-0 z-0" src="images/bg.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- education -->
+      <!-- <section id="" class="section-education" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 pb-3 pt-5">
+              <div class="rounded-3 border border-1 position-relative h-100 overflow-hidden">
+                <div class="box-linear-animation p-md-6 p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="material-icons fill-primary-2" style="font-size: 32px">school</span>
+                    <h4 class="mb-0 ms-2 text-linear-4">Education</h4>
+                  </div>
+                  <div class="d-flex flex-column h-100 position-relative mt-5">
+                    <ul class="ps-3 list-unstyled">
+                      <li class="position-relative z-1 mb-3">
+                        <div class="d-flex gap-2">
+                          <p class="text-300 text-nowrap fw-regular mb-0">2024:</p>
+                          <div class="fs-6">
+                            <span class="text-primary-2">STMIK IKMI CIREBON</span>
+                            <p class="text-dark">Bachelor's Degree in Information Systems</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="line-left position-absolute top-0 border-start z-0"></div>
+                  </div>
+
+                  <div class="mt-0">
+                    <div class="d-flex align-items-center">
+                      <span class="material-icons fill-primary-2" style="font-size: 32px">assignment_turned_in</span>
+                      <h4 class="mb-0 ms-2 text-linear-new">Certifications</h4>
+                    </div>
+                    <div class="d-flex flex-column h-100 position-relative mt-3">
+                      <ul class="ps-3 list-unstyled">
+                        <li class="position-relative z-1 mb-3">
+                          <div class="d-flex gap-2">
+                            <p class="text-300 text-nowrap fw-regular mb-0">2023:</p>
+                            <div class="">
+                              <span class="text-primary-2">Learn Basic Programming JavaScript</span>
+                              <p class="text-dark">Dicoding Indonesia</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="position-relative z-1 mb-3">
+                          <div class="d-flex gap-2">
+                            <p class="text-300 text-nowrap fw-regular mb-0">2023:</p>
+                            <div>
+                              <span class="text-primary-2">Web Developer</span>
+                              <p class="text-dark">DTS Kominfo</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="line-left position-absolute top-0 border-start z-0"></div>
+                    </div>
+                  </div>
+
+                  <div class="bg-overlay position-absolute bottom-0 start-0 z-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pb-3 pt-5">
+              <div class="rounded-3 border border-1 position-relative h-100 overflow-hidden">
+                <div class="box-linear-animation p-md-6 p-3">
+                  <div class="d-flex align-items-center">
+                    <span class="material-icons fill-primary-2" style="font-size: 32px">search</span>
+                    <h4 class="mb-0 ms-2 text-linear-new">Researched</h4>
+                  </div>
+                  <div class="d-flex flex-column h-100 position-relative mt-5">
+                    <ul class="ps-3 list-unstyled">
+                      <li class="position-relative z-1 mb-3">
+                        <div class="d-flex gap-2">
+                          <p class="text-300 text-nowrap fw-regular mb-0">2024:</p>
+                          <div>
+                            <span class="text-primary-2">Web Development and UI/UX Design</span>
+                            <p class="text-dark">Explored modern web development techniques and UI/UX design principles.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="position-relative z-1 mb-3">
+                        <div class="d-flex gap-2">
+                          <p class="text-300 text-nowrap fw-regular mb-0">2024:</p>
+                          <div>
+                            <span class="text-primary-2">E-commerce Platform Development</span>
+                            <p class="text-dark">Studied best practices for building scalable e-commerce solutions.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="position-relative z-1 mb-3">
+                        <div class="d-flex gap-2">
+                          <p class="text-300 text-nowrap fw-regular mb-0">2023:</p>
+                          <div>
+                            <span class="text-primary-2">Responsive Web Design Techniques</span>
+                            <p class="text-dark">Researched advanced responsive design methods for optimal user experience across devices.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="line-left position-absolute top-0 border-start z-0"></div>
+                  </div>
+                  <div class="bg-overlay position-absolute bottom-0 start-0 z-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- projects -->
+      <section id="project" class="section-service-list pb-3 pt-5 py-5" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-center mb-1">
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                  <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#A8FF53"></circle>
+                  </svg>
+                  <span class="text-linear-4 d-flex align-items-center"> Projects </span>
+                </div>
+                <h5>
+                  <span>
+                    My Recent Works
+                    <span class="text-300"> Explore My Latest Projects </span>
+                  </span>
+                </h5>
+              </div>
+              <div class="card-scroll mt-1">
+                <div class="cards">
+                  <!-- Project 1 -->
+                  <div class="card-custom" data-index="0">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/project-porto.png" alt="Portfolio Website">
+                            <a href="#" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="#" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Portfolio Website</h3>
+                              <p class="mb-3">Showcase. Professional. Creative.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">A visually appealing portfolio website designed to showcase creative projects and achievements.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">HTML, CSS, JavaScript, Bootstrap, jQuery, Three.js</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Duration</p>
+                              <p class="card__description text-300 fs-6 mb-0">1 month</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project 2 -->
+                  <div class="card-custom" data-index="1">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/company.png" alt="Company Profile">
+                            <a href="#" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="#" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Company Profile</h3>
+                              <p class="mb-3">Professional. Informative. Engaging.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">Developed a comprehensive company profile website showcasing products, services, and company information.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">HTML, CSS, JavaScript, Bootstrap 5.2.3, jQuery 3.6.0, Swiper</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Client</p>
+                              <p class="card__description text-300 fs-6 mb-0">PT Smart Techtex</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project 3 -->
+                  <div class="card-custom" data-index="2">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/cepatberes.png" alt="Digital Service Platform">
+                            <a href="" target="_blank" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="" target="_blank" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Digital Service Platform</h3>
+                              <p class="mb-3">Fast. Efficient. Professional.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">A comprehensive digital service platform offering various solutions from academic assistance to digital marketing.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">React.js, Node.js, Express, MongoDB, Bootstrap 5</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Type</p>
+                              <p class="card__description text-300 fs-6 mb-0">Service Platform</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 4 -->
+                  <div class="card-custom" data-index="3">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/LP.png" alt="Landing Page">
+                            <a href="" target="_blank" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="" target="_blank" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Modern Landing Page</h3>
+                              <p class="mb-3">Clean. Modern. Responsive.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">A modern landing page with smooth animations and responsive design.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">HTML5, CSS3, JavaScript, GSAP Animation</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Type</p>
+                              <p class="card__description text-300 fs-6 mb-0">Landing Page</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 5 -->
+                  <div class="card-custom" data-index="4">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/food.png" alt="Restaurant Website">
+                            <a href="" target="_blank" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="" target="_blank" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Restaurant Website</h3>
+                              <p class="mb-3">Elegant. Interactive. User-friendly.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">A complete restaurant website with online ordering system, menu management, and QRIS payment integration.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">React.js, Node.js, Express, MongoDB, Payment Gateway Integration</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Features</p>
+                              <p class="card__description text-300 fs-6 mb-0">Online Ordering, Menu Management, QRIS Payment</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project 6 -->
+                  <div class="card-custom" data-index="5">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/to-do-list.png" alt="Bookshelf App">
+                            <a href="" target="_blank" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="" target="_blank" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Bookshelf Application</h3>
+                              <p class="mb-3">Simple. Efficient. Organized.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">A digital bookshelf application for managing and organizing book collections with local storage functionality.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">HTML5, CSS3, JavaScript, Local Storage API</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Features</p>
+                              <p class="card__description text-300 fs-6 mb-0">Book Management, Search Function, Reading Status Tracking</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project 7 -->
+                  <div class="card-custom" data-index="6">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/kangato.png" alt="Kangato Website">
+                            <a href="https://kangato.com" target="_blank" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a href="https://kangato.com" target="_blank" class="card_title_link">
+                              <h3 class="text-linear-4 mb-2">Kangato - Portfolio Website</h3>
+                              <p class="mb-3">Professional. Reliable. Innovative.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">A comprehensive portfolio website designed for Kangato's marketing campaigns, showcasing their services and achievements in a visually appealing manner.</p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">Laravel, MySQL, Bootstrap, jQuery, AJAX, RESTful API</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Features</p>
+                              <p class="card__description text-300 fs-6 mb-0">Service Management, Client Portal, Project Tracking, Online Consultation</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project 8 -->
+                  <div class="card-custom" data-index="8">
+                    <div class="card__inner bg-6 px-md-5 py-md-6 px-3 py-4 box-linear-animation">
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="card__image-container zoom-img position-relative mb-4 mb-lg-0">
+                            <img class="card__image" src="images/sinargarden.png" alt="Sinar Garden Website">
+                            <a class="card-image-overlay position-absolute start-0 end-0 w-100 h-100" href="https://sinargarden.com/" target="_blank"></a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="card__title mb-lg-4 mb-3">
+                            <a class="card_title_link" href="https://sinargarden.com/" target="_blank">
+                              <h3 class="text-linear-4 mb-2">Sinar Garden - Awning Systems</h3>
+                              <p class="mb-3">Multilingual. Professional. International.</p>
+                            </a>
+                          </div>
+                          <div class="card__content">
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Project Overview</p>
+                              <p class="card__description text-300 fs-6 mb-0">
+                                A multilingual corporate website for PT Smart Techtex's awning systems, featuring Korean and Indonesian language support with product catalogs and company information.
+                              </p>
+                            </div>
+                            <div class="content mb-3">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Technologies Used</p>
+                              <p class="card__description text-300 fs-6 mb-0">HTML5, CSS3, JavaScript, Bootstrap, i18n Internationalization</p>
+                            </div>
+                            <div class="content">
+                              <p class="fs-7 text-dark text-uppercase mb-1">Features</p>
+                              <p class="card__description text-300 fs-6 mb-0">Multilingual Support, Product Catalog, Company Profile, Contact Integration</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="div"></div>
+      <style>
+        .section-skills-cosmic {
+          margin-top: 100px !important; /* Force override */
+          position: relative;
+          z-index: 1;
+        }
+
+        .section-service-list {
+          position: relative;
+          z-index: 2;
+          margin-bottom: 100px;
+        }
+      </style>
+      <!-- Skills 1 Page 2 -->
+      <section id="skills" class="section-skills-cosmic py-8 pb-3 mt-5 position-relative" data-aos="fade-up">
+        <div class="container">
+          <div class="rounded-3 border border-1 position-relative overflow-hidden">
+            <div class="box-linear-animation position-relative z-1 p-lg-5 p-3 p-md-4">
+              <div class="position-relative z-1">
+                <div class="text-center">
+                  <div class="d-flex align-items-center justify-content-center mb-2">
+                    <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                      <circle cx="2.5" cy="3" r="2.5" fill="currentColor"></circle>
+                    </svg>
+                    <span class="text-linear-4 d-flex align-items-center"> My Skills </span>
+                  </div>
+                  <h5>
+                    <span>
+                      Technologies I've mastered
+                      <span class="text-300"> for creating innovative solutions </span>
+                    </span>
+                  </h5>
+                </div>
+                <div id="cosmic-skills-particles"></div>
+                <div class="cosmic-skills-container">
+                  <!-- Frontend Core -->
+                  <div class="cosmic-skill-item" data-skill="HTML">
+                    <img src="images/html.webp" alt="HTML">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="CSS">
+                    <img src="images/css.webp" alt="CSS">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="JavaScript">
+                    <img src="images/javascript.webp" alt="JavaScript">
+                  </div>
+
+                  <!-- CSS Frameworks -->
+                  <div class="cosmic-skill-item" data-skill="Bootstrap">
+                    <img src="images/bootstrap.webp" alt="Bootstrap">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="Tailwind">
+                    <img src="images/tailwind.webp" alt="Tailwind">
+                  </div>
+
+                  <!-- JavaScript Frameworks/Libraries -->
+                  <div class="cosmic-skill-item" data-skill="React">
+                    <img src="images/react.webp" alt="React">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="Vue">
+                    <img src="images/vue.webp" alt="Vue">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="jQuery">
+                    <img src="images/jquery.webp" alt="jQuery">
+                  </div>
+
+                  <!-- Backend Technologies -->
+                  <div class="cosmic-skill-item" data-skill="PHP">
+                    <img src="images/php.webp" alt="PHP">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="Laravel">
+                    <img src="images/icon-9.svg" alt="Laravel">
+                  </div>
+                  <div class="cosmic-skill-item" data-skill="Python">
+                    <img src="images/python.webp" alt="Python">
+                  </div>
+
+                  <!-- Database -->
+                  <div class="cosmic-skill-item" data-skill="MySQL">
+                    <img src="images/icon-3.svg" alt="MySQL">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact 1-->
+      <section id="contact" class="section-contact-2 pb-4 pt-5" data-aos="fade-up">
+        <div class="container position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-lg-7 pb-5 pb-lg-0">
+              <div class="position-relative z-2">
+                <h3 class="text-linear-4 mb-3">Let's connect</h3>
+                <form id="contactForm" action="https://formspree.io/f/mbljokbp" method="POST">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control bg-3 border border-1 rounded-3" id="name" name="name" placeholder="Your name" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control bg-3 border border-1 rounded-3" id="phone" name="phone" placeholder="Phone" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" class="form-control bg-3 border border-1 rounded-3" id="email" name="email" placeholder="Email" required="">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control bg-3 border border-1 rounded-3" id="subject" name="subject" placeholder="Subject" required="">
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control bg-3 border border-1 rounded-3" id="message" name="message" placeholder="Message" required=""></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary-2 rounded-2">
+                        <span class="btn-text">Send Message</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex flex-column ps-lg-8">
+              <div class="d-flex align-items-center mb-3 position-relative d-inline-flex">
+                <div class="d-inline-block">
+                  <div class="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
+                    <i class="ri-phone-fill text-primary-2 fs-26"></i>
+                  </div>
+                </div>
+                <div class="ps-3 h-100">
+                  <span class="text-400 fs-6">WhatsApp Number</span>
+                  <h6 class="mb-0">
+                    <a href="https://wa.me/6289509769069" target="_blank">+6289509769069</a>
+                  </h6>
+                </div>
+                <a href="https://wa.me/6289509769069" target="_blank" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                <a href="tel:+1-234-567-8901" class="position-absolute top-0 start-0 w-100 h-100"></a>
+              </div>
+              <div class="d-flex align-items-center mb-3 position-relative d-inline-flex">
+                <div class="d-inline-block">
+                  <div class="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
+                    <i class="ri-mail-fill text-primary-2 fs-26"></i>
+                  </div>
+                </div>
+                <div class="ps-3 h-100">
+                  <span class="text-400 fs-6">Email</span>
+                  <h6 class="mb-0">nurdi014@gmail.com</h6>
+                </div>
+                <a href="mailto:nurdi014@gmail.com" class="position-absolute top-0 start-0 w-100 h-100"></a>
+              </div>
+              <div class="d-flex align-items-center mb-3 position-relative d-inline-flex">
+                <div class="d-inline-block">
+                  <div class="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
+                    <i class="ri-instagram-fill text-primary-2 fs-26"></i>
+                  </div>
+                </div>
+                <div class="ps-3 h-100">
+                  <span class="text-400 fs-6">Instagram</span>
+                  <h6 class="mb-0">@nrdynt29</h6>
+                </div>
+                <a href="https://www.instagram.com/nrdynt29" target="_blank" class="position-absolute top-0 start-0 w-100 h-100"></a>
+              </div>
+              <div class="d-flex align-items-center mb-3 position-relative d-inline-flex">
+                <div class="d-inline-block">
+                  <div class="icon-flip flex-nowrap icon-shape icon-xxl border border-1 rounded-3 bg-3">
+                    <i class="ri-map-2-fill text-primary-2 fs-26"></i>
+                  </div>
+                </div>
+                <div class="ps-3 h-100">
+                  <span class="text-400 fs-6">Address</span>
+                  <h6 class="mb-0">Yogyakarta, INA</h6>
+                </div>
+                <a href="" class="position-absolute top-0 start-0 w-100 h-100" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <style>
+      .spinner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ffffff;
+        border-top: 2px solid transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #form-status.success {
+        color: #28a745;
+        background: rgba(40, 167, 69, 0.1);
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      #form-status.error {
+        color: #dc3545;
+        background: rgba(220, 53, 69, 0.1);
+        padding: 1rem;
+        border-radius: 8px;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        async function handleSubmit(event) {
+          event.preventDefault();
+
+          // Show loading state
+          Swal.fire({
+            title: "Sending Message...",
+            html: "Please wait...",
+            allowOutsideClick: false,
+            didOpen: () => {
+              Swal.showLoading();
+            },
+          });
+
+          try {
+            const response = await fetch(form.action, {
+              method: form.method,
+              body: new FormData(form),
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              // Success
+              Swal.fire({
+                icon: "success",
+                title: "Message Sent!",
+                text: "Thank you for your message. We'll get back to you soon!",
+                confirmButtonColor: "#28a745",
+              });
+              form.reset();
+            } else {
+              // Error with response data
+              const data = await response.json();
+              let errorMessage = "Oops! There was a problem submitting your form";
+
+              if (Object.hasOwn(data, "errors")) {
+                errorMessage = data["errors"].map((error) => error["message"]).join(", ");
+              }
+
+              Swal.fire({
+                icon: "error",
+                title: "Submission Failed",
+                text: errorMessage,
+                confirmButtonColor: "#dc3545",
+              });
+            }
+          } catch (error) {
+            // Network or other error
+            Swal.fire({
+              icon: "error",
+              title: "Submission Failed",
+              text: "Oops! There was a problem submitting your form. Please try again later.",
+              confirmButtonColor: "#dc3545",
+            });
+          }
+        }
+
+        form.addEventListener("submit", handleSubmit);
+      });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="section-footer-2 position-relative">
+        <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+          <div class="text-center">
+            <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="">
+              <img src="images/favicon.svg" alt="nr">
+              <span class="fs-4 ms-2">nr</span>
+            </a>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="" target="_blank">
+                <i class="ri-facebook-circle-fill fs-18"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="ri-linkedin-fill fs-18"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="ri-github-fill fs-18"></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="ri-instagram-fill fs-18"></i>
+              </a>
+              <a href="mailto:nurdi014@gmail.com">
+                <i class="ri-mail-fill fs-18"></i>
+              </a>
+            </div>
+            <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+              <a href="#about" class="fs-6"> About </a>
+              <a href="#resume" class="fs-6"> Resume </a>
+              <a href="#services" class="fs-6"> Expertise </a>
+              <a href="#project" class="fs-6"> Portfolio </a>
+              <a href="#contact" class="fs-6"> Contact </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll top -->
+    <div class="btn-scroll-top style-btn-2">
+      <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+        <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"></path>
+      </svg>
     </div>
-  </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Libs JS -->
+    <!-- JavaScript only (no CSS) -->
+    <script src="js/sweetalert2.min.js"></script>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/headhesive.min.js"></script>
+    <script src="js/smart-stick-nav.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/gsap.min_1.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/ScrollTrigger.min_1.js"></script>
+    <script src="js/jquery.carouselTicker.min.js"></script>
+    <script src="js/jquery.odometer.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/gsap-custom.js"></script>
+    <script src="js/imageRevealHover.js"></script>
+    <script src="js/aat.min.js"></script>
+    <!-- Theme JS -->
+    <script src="js/main.js"></script>
+    <!-- GSAP -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Inisiasi GSAP -->
+    <script>
+      // Inisialisasi semua plugin GSAP
+      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".experience-card");
+        const listItems = document.querySelectorAll(".experience-item");
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+        function applyHoverEffect(elements) {
+          elements.forEach((element) => {
+            element.addEventListener("mouseenter", enterEffect);
+            element.addEventListener("mouseleave", leaveEffect);
+            element.addEventListener("mousemove", moveEffect);
+          });
+        }
 
-</body>
+        function enterEffect(event) {
+          const element = event.currentTarget;
+          gsap.to(element, {
+            duration: 0.3,
+            z: 50,
+            scale: 1.05,
+            ease: "power2.out",
+          });
+          if (element.classList.contains("experience-card")) {
+            gsap.to(element.querySelector(".experience-icon"), {
+              duration: 0.3,
+              rotation: 360,
+              scale: 1.2,
+            });
+            gsap.to(element.querySelector(".experience-title"), {
+              duration: 0.3,
+              color: "var(--tc-theme-primary-2)",
+              fontWeight: "bold",
+            });
+          }
+        }
 
-</html>
+        function leaveEffect(event) {
+          const element = event.currentTarget;
+          gsap.to(element, {
+            duration: 0.3,
+            z: 0,
+            scale: 1,
+            ease: "power2.out",
+          });
+          if (element.classList.contains("experience-card")) {
+            gsap.to(element.querySelector(".experience-icon"), {
+              duration: 0.3,
+              rotation: 0,
+              scale: 1,
+            });
+            gsap.to(element.querySelector(".experience-title"), {
+              duration: 0.3,
+              color: "inherit",
+              fontWeight: "normal",
+            });
+          }
+        }
+
+        function moveEffect(event) {
+          const element = event.currentTarget;
+          const rect = element.getBoundingClientRect();
+          const x = event.clientX - rect.left;
+          const y = event.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const maxRotation = 10;
+
+          const rotateY = ((x - centerX) / centerX) * maxRotation;
+          const rotateX = ((centerY - y) / centerY) * maxRotation;
+
+          gsap.to(element, {
+            duration: 0.3,
+            rotationX: rotateX,
+            rotationY: rotateY,
+            ease: "power2.out",
+          });
+        }
+
+        applyHoverEffect(cards);
+        applyHoverEffect(listItems);
+      });
+    </script>
+    <!-- particles -->
+    <script src="js/tsparticles.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        tsParticles.load("cosmic-skills-particles", {
+          particles: {
+            number: {
+              value: 160,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#ffffff",
+            },
+            shape: {
+              type: "circle",
+            },
+            opacity: {
+              value: 1,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 4,
+                size_min: 0.3,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              enable: true,
+              speed: 1,
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "bounce", // Ubah ke "bounce" agar particles memantul di batas
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 600,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                size: 0,
+                duration: 2,
+                opacity: 0,
+                speed: 3,
+              },
+              repulse: {
+                distance: 400,
+                duration: 0.4,
+              },
+            },
+          },
+          retina_detect: true,
+          fullScreen: {
+            enable: false,
+            zIndex: 2,
+          },
+        });
+
+        // ... (kode JavaScript lainnya tetap sama)
+      });
+    </script>
+  
+
+</body></html>
